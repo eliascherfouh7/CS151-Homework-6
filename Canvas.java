@@ -1,6 +1,6 @@
 import java.awt.Color;
 import java.awt.FlowLayout;
-import java.awt.Rectangle;
+import java.awt.Dimension;
 
 import javax.swing.JPanel;
 
@@ -11,7 +11,7 @@ public class Canvas extends JPanel{
 	 */
 	public Canvas(){
 		super(new FlowLayout());
-		this.setBounds(new Rectangle(400,400));
+		this.setPreferredSize(new Dimension(400, 400));
 		this.setBackground(Color.WHITE);
-	}
+		}
 }

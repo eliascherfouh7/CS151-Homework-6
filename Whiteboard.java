@@ -38,11 +38,11 @@ public class Whiteboard extends JFrame{
 		JPanel wBox = boxControls(ctrls);
 		westControls.add(wBox);
 		for(Component comp : wBox.getComponents()){
-			//set this component to the left
+			
 		}
 		whiteBoard.add(westControls, BorderLayout.WEST);
-		
 		whiteBoard.pack();
 		whiteBoard.setVisible(true);
+		whiteBoard.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 }
